@@ -1,17 +1,21 @@
 #landlord {
     user-select: none;
     position: fixed;
-    left: 30px;
+    right: 100px;
     bottom: 0;
     width: 280px;
     height: 250px;
-    z-index: 10000;
+    z-index: 10;
     font-size: 0;
     transition: all .3s ease-in-out;
 }
 
 #live2d {
     position: relative;
+}
+.live2d{
+    width: 280px;
+    height: 250px;
 }
 
 .message {
@@ -25,7 +29,7 @@
     text-align: center;
     border: 1px solid rgba(255,137,255,.4);
     border-radius: 12px;
-    background-color: rgba(255,137,255,.2);
+    background-color: rgba(255, 137, 255, 0.877);
     box-shadow: 0 3px 15px 2px rgba(255,137,255,.4);
     font-size: 13px;
     font-weight: 400;
@@ -38,6 +42,7 @@
     animation-iteration-count: infinite;
     animation-name: shake;
     animation-timing-function: ease-in-out;
+    z-index: 10000;
 }
 
 .hide-button {
@@ -66,7 +71,12 @@
 
 @media (max-width: 860px) {
     #landlord {
-        display: none;
+        /* display: none; */
+        
+    }
+    #live2d{
+        width: 200;
+        height: 170;
     }
 }
 
